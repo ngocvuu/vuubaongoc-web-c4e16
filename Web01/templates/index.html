@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Web </title>
+  </head>
+  <body>
+    <h1> C4E blog </h1>
+    <!-- jinja2 template -->
+    {% for p in posts %}
+      <h3>{{ p.title }}</h3>
+      <p>
+        {{ p.content}}
+      </p>
+      <!-- conditional expression -->
+      {{ "Mr" if p.gender == 1 else "Mrs" }}
+
+      {{p.author}}
+    {% endfor %}
+
+  </body>
+</html>
