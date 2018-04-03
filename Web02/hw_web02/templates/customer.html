@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> 10 first customers who haven't been contacted </h1>
+    {% for customers in all_customers %}
+      <p> {{ "Mr" if customers.gender == 1 else "Mrs" }} {{customers.name}} </p>
+      <p> Email: {{customers.email}} </p>
+      <p> Phone number: {{customers.phone}} </p>
+      <p> Job: {{customers.job}} </p>
+      <p> Contacted or not: {{customers.contacted}} </p>
+      <p> {{ "*" * 40 }}</p>
+    {% endfor %}
+  </body>
+</html>
