@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> More details </title>
+  </head>
+  <body>
+
+
+      <p> Name: {{services.name}} </p>
+      <p> Yob: {{services.yob}} </p>
+      <p> Gender: {{"Nam" if services.gender == 1 else "Nữ"}} </p>
+      <p> Height: {{services.height}} </p>
+      <p> Phone number: {{services.phone}} </p>
+      <p> Address: {{services.address}} </p>
+      <p> Status: {{"Rảnh" if services.status == True else "Bận"}} </p>
+      <p> Image: <img src= {{services.image}}  alt="Graphic content" </a></p>
+      <p> Description: {{services.description}} </p>
+      <p> Measurements: {{services.measurements}} </p>
+      <p> <a href="{{url_for("order",order_id=order_id)}}"> Yêu cầu dịch vụ </a> </p>
+  </body>
+</html>

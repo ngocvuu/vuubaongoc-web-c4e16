@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Admin </title>
+  </head>
+  <body>
+    <h1> Admin page </h1>
+    <a href="{{url_for("create")}}"> Thêm nhân viên mới </a>
+    <table border = "1px">
+      <thead>
+        <th> STT </th>
+        <th> Tên </th>
+        <th> Năm sinh </th>
+        <th> Giới tính </th>
+        <th> Chièu cao </th>
+        <th> Số ĐT </th>
+        <th> Địa chỉ </th>
+        <th> Trạng thái </th>
+        <th></th>
+      </thead>
+      <tbody>
+        {% for service in services %}
+        <tr>
+          <td> {{ loop.index }}</td>
+          <td> {{ service.name }} </td>
+          <td> {{ service.yob }} </td>
+          <td> {{ "Nam" if service.gender == 0 else "Nữ" }} </td>
+          <td> {{ service.height }} </td>
+          <td> {{ service.phone }} </td>
+          <td> {{ service.address }} </td>
+          <td> {{ "Free" if service.status == True else "Occupied"}} </td>
+          <td>
+            <a href="{{url_for("update",service_id=service.id)}}">  Cập nhật </a>
+          </td>
+          <td>
+            <a href="{{url_for("detail",service_id=service.id)}}"> Chi tiết </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
