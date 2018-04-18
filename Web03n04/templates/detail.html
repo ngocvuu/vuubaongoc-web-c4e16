@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> More details </title>
+    {% include "meta-data.html" %}
+<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+  </head>
+  <body class="container">
+    <div class="centered border border-danger p-5 text-white bg-dark chewy">
+      <p> <img src= {{services.image}} alt="Graphic content" class="rounded" </a></p>
+      <p> Name: {{services.name}} </p>
+      <p> Yob: {{services.yob}} </p>
+      <p> Gender: {{"Nam" if services.gender == 1 else "Nữ"}} </p>
+      <p> Height: {{services.height}} </p>
+      <p> Phone number: {{services.phone}} </p>
+      <p> Address: {{services.address}} </p>
+      <p> Status: {{"Rảnh" if services.status == True else "Bận"}} </p>
+      <p> Description: {{services.description}} </p>
+      <p> Measurements: {{services.measurements}} </p>
+      <p> <a href="{{url_for("order",order_id=services.id)}}"> Yêu cầu dịch vụ </a> </p>
+    </div>
+
+  </body>
+</html>

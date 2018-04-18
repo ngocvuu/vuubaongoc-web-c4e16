@@ -1,0 +1,90 @@
+.font-lobster{
+  font-family: 'Lobster', cursive;
+}
+
+.mb-250px{
+  margin-bottom: 250px;
+}
+
+.h-50px{
+  height: 50px;
+}
+
+.h-100px{
+  height: 100px;
+}
+.h-150px{
+  height: 150px;
+}
+
+.h-190px{
+  height: 190px;
+}
+.h-250px{
+  height: 250px;
+}
+.h-300px{
+  height: 300px;
+}
+.h-400px{
+  height: 400px;
+}
+.h-500px{
+  height: 500px;
+}
+.h-600px{
+  height:600px;
+}
+#background-male{
+  background-image: url("../../static/image/female.jpg");
+  background-size: cover;
+}
+
+#background-female{
+  background-image: url("../../static/image/male.jpg");
+  background-size: cover;
+}
+#background-night{
+  background-image: url("../../static/image/night.jpg");
+  background-size: cover;
+}
+#bg-1{
+  background-image: url("../../static/image/hand.jpg");
+  background-size: cover;
+}
+#bg-2{
+  background-image: url("../../static/image/steel.jpg");
+  background-size: cover;
+}
+#bg-3{
+  background-image: url("../../static/image/woods.jpg");
+  background-size: cover;
+}
+#bg-4{
+  background-image: url("../../static/image/rocks.jpg");
+  background-size: cover;
+}
+#bg-5{
+  background-image: url("../../static/image/lightning.jpg");
+  background-size: cover;
+}
+#bg-6{
+  background-image: url("../../static/image/tear.jpg");
+  background-size: cover;
+}
+#bg-7{
+  background-image: url("../../static/image/rain.jpg");
+  background-size: contain;
+}
+#bg-8{
+  background-image: url("../../static/image/storm.jpg");
+  background-size: cover;
+}
+
+.chewy{
+  font-family: 'Chewy', cursive;
+}
+.bad{
+  font-family: 'PT Serif', serif;
+
+}

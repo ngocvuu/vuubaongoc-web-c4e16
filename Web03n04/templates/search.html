@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Database Intro </title>
+  </head>
+  <body>
+    <h1> Search </h1>
+
+
+    {% for service in all_services %}
+      <div class="">
+      {% if service.gender == 1 %}
+      <img src="https://znews-photo-td.zadn.vn/w860/Uploaded/oqivovbt/2018_03_02/nhiet_ba_09.jpg" alt="Graphic content">
+      {% else %}
+      <img src="http://www.koogle.tv/static/media/uploads/newest-news-2/01_sojisub_080117.jpg" alt="Graphic content">
+      {% endif %}
+
+      <p> Name: {{service.name}} </p>
+      <p> Yob: {{service.yob}} </p>
+      <p> Gender: {{"Nam" if service.gender==0 else "Nữ"}} </p>
+      <p> Height: {{service.height}} </p>
+      <p> Phone number: {{service.phone}} </p>
+      <p> Address: {{service.address}} </p>
+      <p> Status: {{service.status}} </p>
+      <p><a href="{{url_for("detail",service_id=service.id)}}"> Chi tiết </a></p>
+      </div>
+    {% endfor %}
+  </body>
+</html>
